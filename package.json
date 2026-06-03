@@ -11,9 +11,9 @@
     "node": ">=20.x"
   },
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev --turbopack",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "biome check .",
     "type-check": "tsc --noEmit",
     "format": "biome format --write . && prettier --write \"**/*.{md,css,scss}\"",
@@ -48,7 +48,7 @@
     "@types/node": "^25.0.9",
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.2",
+    "@vitejs/plugin-react": "^6.0.2",
     "@vitest/coverage-v8": "^4.0.17",
     "jsdom": "^27.4.0",
     "prettier": "^3.7.4",
